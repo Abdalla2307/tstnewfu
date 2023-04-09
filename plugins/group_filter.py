@@ -137,6 +137,9 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton(f'ɪɴꜰᴏ', 'sᴇʀɪᴇs')
         ]
     )
+    btn.insert(1, [
+        InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_fall#files#{key}#{offset}")
+    ]) 
     btn.insert(11,
         [
             InlineKeyboardButton(text="⚡𝐂𝐡𝐞𝐜𝐤 𝐏𝐌⚡", url='t.me/ArrowFlixBot')
